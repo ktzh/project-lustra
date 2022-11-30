@@ -1,6 +1,7 @@
 # Project Lustra
-To fire up the Lustra, run those commands:
+To fire up the Lustra, you need `podman` and `podman-compose`,
+then run this command:
 ```sh
-podman build -t lustra .
-podman run -p 3000:5000 -t localhost/lustra
+podman-compose -f container-compose.yml up
 ```
+Then navigate to localhost:3000 address
